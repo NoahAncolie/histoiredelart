@@ -1,0 +1,300 @@
+.page {
+    --background: #fbfaf8;
+    --foreground: #fbfaf8;
+
+    --textPrimary: #25252D;
+    --textSecondary: #EAEAEC;
+    --textTertiary: #7d7d7d;
+    --color: #ED311D;
+
+    --buttonPrimaryHover: #383838;
+    --buttonSecondaryHover: #f2f2f2;
+    --buttonSecondaryBorder: #ebebeb;
+
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fontInter);
+    background-color: var(--background);
+}
+
+.main {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 800px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: var(--foreground);
+    padding: 120px 60px;
+}
+
+.pageLayer {
+    width: 70%;
+    margin: 50px 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.pageTitle {
+    margin: auto;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.timeline {
+    margin: 4em auto;
+    position: relative;
+    max-width: 46em;
+
+    &:before {
+        background-color: var(--textPrimary);
+        content: '';
+        margin-left: -1px;
+        position: absolute;
+        top: 0;
+        left: 2.4em;
+        width: 1px;
+        height: 100%;
+    }
+    list-style-type: none;
+
+    .short {
+        margin-top: 1em;
+    }
+
+    .event {
+        .copy {
+            transition: ease-in-out 0.30s;
+            padding: 2em;
+            position: relative;
+            top: -1.875em;
+            left: 4em;
+            width: 80%;
+
+            h4 {
+                margin-top: 5px;
+            }
+
+            p:not(.timeline-event-thumbnail) {
+                padding-bottom: 1.2em;
+            }
+        }
+        .icon {
+            transition: ease-in-out 0.30s;
+            border-radius: 50%;
+            background-color: var(--textPrimary);
+            display: block;
+            margin: 0.5em 0.5em 0.5em -0.5em;
+            position: relative;
+            top: 2em;
+            left: 2em;
+            width: 1em;
+            height: 1em;
+            transform: rotate(45deg);
+        }
+
+        .thumbnail {
+            color: var(--background);
+            border-radius: 4px;
+            background-color: var(--secondColor);
+            padding: 0.2em 0.6em 0.2em 0.6em;
+            display: inline-block;
+            cursor: pointer;
+            margin-bottom: 2em;
+        }
+
+        .thumbnail:hover {
+            background-color: var(--secondColor);
+            transition: ease-in-out 0.30s;
+
+            .link {
+                color: var(--textSecondary);
+                text-decoration: none;
+                transition: ease-in-out 0.25s;
+            }
+        }
+    }
+}
+
+.histoireArtCours {
+    ol {
+        list-style-type: upper-roman;
+    }
+    ul {
+        list-style-type: circle;
+    }
+    li {
+        padding: 5px 10px;
+        list-style-position: inside;
+    }
+    h2 {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .historique {
+        font-style: italic;
+    }
+    height: fit-content;
+}
+
+.coursFocus {
+    position: fixed;
+    top: 0px;
+    right: 0;
+    width: 18vw;
+    height: 100%;
+    border-left: 1px solid transparent;
+    border-radius: 0;
+    padding-top: 70px;
+}
+
+.coursFocusContent {
+    position: sticky;
+    top: 0px;
+    padding: 30px;
+    transition: 0.3s ease-in-out;
+
+    img {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.115), -5px -5px 10px rgb(255, 255, 255);
+        border: 1px solid rgba(255, 255, 255, 0.436);
+        margin-bottom: 10px;
+    }
+    h2 {
+        text-align: left;
+    }
+}
+
+.histoireArtCoursTitle {
+    text-align: center;
+    margin: 16% 0;
+    height: 100px;
+}
+
+.coursContent {
+    width: 50vw;
+    margin: 50px auto;
+}
+
+.partieCours {
+    margin-top: 100px;
+}
+
+.imageCentre {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.115), -5px -5px 10px rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.436);
+}
+
+.smallImg {
+    width: 20vw;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.115), -5px -5px 10px rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.436);
+}
+
+.bigImg {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 30px;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    img {
+        display: block;
+        height: calc(100% - 60px);
+        margin: auto;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.325);
+    }
+
+    .close {
+        position: absolute;
+        font-size: 30px;
+        font-weight: 50;
+        color: White;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid white;
+        text-align: center;
+        cursor: pointer;
+        right: 130px;
+    }
+}
+
+.h3Cours {
+    margin: 20px 0 5px 0;
+    color: rgb(44, 44, 44);
+}
+
+.detail {
+    border-left: 2px solid var(--secondColor);
+    border-radius: 0;
+    padding-left: 5px;
+}
+
+.imageFond {
+    position: fixed;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1%;
+}
+
+.titusThermes {
+    margin: 50px auto;
+}
+
+@media (max-width: 600px) {
+    .main {
+        padding: 48px 24px;
+    }
+
+    .intro {
+        gap: 16px;
+    }
+
+    .intro h1 {
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -1.92px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .logo {
+        filter: invert();
+    }
+
+    .page {
+        --background: #000;
+        --foreground: #000;
+
+        --textPrimary: #ededed;
+        --textSecondary: #999;
+
+        --buttonPrimaryHover: #ccc;
+        --buttonSecondaryHover: #1a1a1a;
+        --buttonSecondaryBorder: #1a1a1a;
+    }
+}
