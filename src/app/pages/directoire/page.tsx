@@ -1,11 +1,11 @@
 'use client'
 import styles from "../../page.module.css"
 import { useState } from "react"
-import priseBastille from "../../../../public/histoire_art/Prise_de_la_Bastille.jpg"
-import convention from "../../../../public/histoire_art/convention.jpg"
-import audienceDirectoire from "../../../../public/histoire_art/audience-directoire.jpg"
-import consulat from "../../../../public/histoire_art/consulat.png"
-import meridienneJacob from "../../../../public/histoire_art/meridienne-jacob.jpg"
+import priseBastille from "@/assets/histoire_art/Prise_de_la_Bastille.jpg"
+import convention from "@/assets/histoire_art/convention.jpg"
+import audienceDirectoire from "@/assets/histoire_art/audience-directoire.jpg"
+import consulat from "@/assets/histoire_art/consulat.png"
+import meridienneJacob from "@/assets/histoire_art/meridienne-jacob.jpg"
 import Image, {StaticImageData} from "next/image";
 import {Focus} from "@/component/focus";
 

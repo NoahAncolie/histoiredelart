@@ -1,14 +1,14 @@
 'use client'
 import styles from "../../page.module.css";
 import { useState } from "react";
-import napoleon from "../../../../public/histoire_art/napoleon.jpg"
-import colonneVendome from "../../../../public/histoire_art/colonne_vendome.jpg"
-import arcCaroussel from "../../../../public/histoire_art/arc-caroussel.jpg"
-import arcTriomphe from "../../../../public/histoire_art/arc-triomphe.jpeg"
-import chalgrin from "../../../../public/histoire_art/chalgrin.jpg"
-import percier from "../../../../public/histoire_art/percier.jpg"
-import fontaine from "../../../../public/histoire_art/fontaine.jpg"
-import passageCouvert from "../../../../public/histoire_art/passage-couvert.jpg"
+import napoleon from "@/assets/histoire_art/napoleon.jpg"
+import colonneVendome from "@/assets/histoire_art/colonne_vendome.jpg"
+import arcCaroussel from "@/assets/histoire_art/arc-caroussel.jpg"
+import arcTriomphe from "@/assets/histoire_art/arc-triomphe.jpeg"
+import chalgrin from "@/assets/histoire_art/chalgrin.jpg"
+import percier from "@/assets/histoire_art/percier.jpg"
+import fontaine from "@/assets/histoire_art/fontaine.jpg"
+import passageCouvert from "@/assets/histoire_art/passage-couvert.jpg"
 import Image, {StaticImageData} from "next/image";
 import {Focus} from "@/component/focus";
 

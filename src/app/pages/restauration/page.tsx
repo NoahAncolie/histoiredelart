@@ -1,5 +1,5 @@
 'use client'
-import defaultImg from '../../../../public/histoire_art/arabesque.jpg'
+import defaultImg from '@/assets/histoire_art/arabesque.jpg'
 import { useState } from "react";
 import Image, {StaticImageData} from "next/image";
 import styles from "../../page.module.css"

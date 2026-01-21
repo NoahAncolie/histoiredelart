@@ -1,15 +1,15 @@
 'use client'
 import { useState } from "react";
-import henri4 from "../../../../public/histoire_art/henri-4.jpg"
-import louis13 from "../../../../public/histoire_art/louis_13.jpg"
-import chateau13 from "../../../../public/histoire_art/chateau-13.jpg"
-import toitMansard from "../../../../public/histoire_art/toit-mansard.jpg"
-import françoisMansart from "../../../../public/histoire_art/francois-mansart.jpg"
-import pointeGateau from "../../../../public/histoire_art/pointe-gateau.jpg"
-import cartoucheAveugle from "../../../../public/histoire_art/cartouche-aveugle.jpg"
-import tournage from "../../../../public/histoire_art/tournage.png"
-import cabinet13 from "../../../../public/histoire_art/cabinet13.jpg"
-import placage13 from "../../../../public/histoire_art/placage13.png"
+import henri4 from "@/assets/histoire_art/henri-4.jpg"
+import louis13 from "@/assets/histoire_art/louis_13.jpg"
+import chateau13 from "@/assets/histoire_art/chateau-13.jpg"
+import toitMansard from "@/assets/histoire_art/toit-mansard.jpg"
+import françoisMansart from "@/assets/histoire_art/francois-mansart.jpg"
+import pointeGateau from "@/assets/histoire_art/pointe-gateau.jpg"
+import cartoucheAveugle from "@/assets/histoire_art/cartouche-aveugle.jpg"
+import tournage from "@/assets/histoire_art/tournage.png"
+import cabinet13 from "@/assets/histoire_art/cabinet13.jpg"
+import placage13 from "@/assets/histoire_art/placage13.png"
 import {Focus} from "@/component/focus";
 import Image, {StaticImageData} from "next/image";
 import styles from "../../page.module.css";

@@ -1,4 +1,4 @@
-import defaultImage from '../../../public/histoire_art/arabesque.jpg'
+import defaultImage from '@/assets/histoire_art/arabesque.jpg'
 
 export function getEvents () {
     return [

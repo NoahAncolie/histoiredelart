@@ -2,7 +2,7 @@
 import styles from '../../page.module.css'
 import { useState } from "react";
 import {Focus} from "@/component/focus";
-import defaultImg from "../../../../public/histoire_art/arabesque.jpg"
+import defaultImg from "@/assets/histoire_art/arabesque.jpg"
 import Image, {StaticImageData} from "next/image";
 
 export default function StyleLouisPhilippe() {

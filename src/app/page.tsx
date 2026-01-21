@@ -1,9 +1,8 @@
 'use client'
 import styles from "./page.module.css";
 import Link from "next/link";
-import Image from "next/image";
 import {getEvents} from "@/app/data/events";
-import {SyntheticEvent, useEffect, useRef, useState} from "react";
+import {useState} from "react";
 
 export default function Home() {
     const [currentLink, setCurrentLink] = useState("");

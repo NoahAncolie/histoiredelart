@@ -1,16 +1,16 @@
 'use client'
 import { useState } from "react";
-import jeuneLouis from "../../../../public/histoire_art/jeune-louis-xiv.jpg"
-import gobelins from "../../../../public/histoire_art/louis-xiv-gobelins.jpg"
-import mazarin from "../../../../public/histoire_art/Mazarin.jpg"
-import versailles from "../../../../public/histoire_art/versailles.jpg"
-import trophee from "../../../../public/histoire_art/trophee.jpg"
-import vegetaux from "../../../../public/histoire_art/vegetaux.jpg"
-import mascaron from "../../../../public/histoire_art/mascaron-louisxiv.jpg"
-import enfilades from "../../../../public/histoire_art/enfilades.png"
-import monogramme from "../../../../public/histoire_art/monogramme-louisxiv.png"
-import bureauxiv from "../../../../public/histoire_art/bureau-louisxiv.jpg"
-import commodeBoulle from "../../../../public/histoire_art/commode-boulle.jpg"
+import jeuneLouis from "@/assets/histoire_art/jeune-louis-xiv.jpg"
+import gobelins from "@/assets/histoire_art/louis-xiv-gobelins.jpg"
+import mazarin from "@/assets/histoire_art/Mazarin.jpg"
+import versailles from "@/assets/histoire_art/versailles.jpg"
+import trophee from "@/assets/histoire_art/trophee.jpg"
+import vegetaux from "@/assets/histoire_art/vegetaux.jpg"
+import mascaron from "@/assets/histoire_art/mascaron-louisxiv.jpg"
+import enfilades from "@/assets/histoire_art/enfilades.png"
+import monogramme from "@/assets/histoire_art/monogramme-louisxiv.png"
+import bureauxiv from "@/assets/histoire_art/bureau-louisxiv.jpg"
+import commodeBoulle from "@/assets/histoire_art/commode-boulle.jpg"
 import Image, {StaticImageData} from "next/image";
 import styles from "../../page.module.css";
 import {Focus} from "@/component/focus";

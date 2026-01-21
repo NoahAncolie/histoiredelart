@@ -1,7 +1,7 @@
 'use client'
 import styles from "../../page.module.css";
 import { useState } from "react";
-import scarabe from "../../../../public/histoire_art/egypte/scarabe.png"
+import scarabe from "@/assets/histoire_art/egypte/scarabe.png"
 import Image from "next/image";
 import {Focus} from "@/component/focus";
 
