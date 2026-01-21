@@ -52,10 +52,9 @@ export default function Home() {
                     </li>
                 )}
             </ul>
-
             <ul className={styles.scroller}>
                 {events.map((event, index) =>
-                <li key={index} className={currentLink === `link-${index}` ? styles.liHover : ""} onClick={() => scrollTo(event.link)} id={`link-${index}`}>{event.name}</li>
+                <li key={index} className={currentLink === `link-${index}` ? styles.liHover : ""} onClick={() => scrollTo(event.link)} id={`link-${index}`}>{ event.name }</li>
                 )}
             </ul>
         </main>
